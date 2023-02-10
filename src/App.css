@@ -1,9 +1,4 @@
-.App {
-	
-	margin: 50px;
-	
-	
-}
+
 
 .container {
 
@@ -30,5 +25,19 @@ input {
 	font-family: Lato, sans serif;
 	font-weight: 900;
 	font-size: 2.2rem;
+	
+}
+
+.dark {
+	
+	background-color: black;
+	color: white;
+	margin: 50px;
+}
+
+.light {
+	background-color: white;
+	color: black;
+	margin: 50px;
 	
 }

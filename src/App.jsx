@@ -1,8 +1,16 @@
-import './App.css'
+import './App.css';
 import { useState , useEffect } from 'react';
 import axios from 'axios';
+import { useContext } from 'react';
+import { DolarContext } from './context/DolarContext';
+import { DolarProvider } from './context/DolarProvider';
+import { Footer } from './components/Footer';
+
 
 const App = () => {
+	
+	const { toggleTheme, setTheme, theme } = useContext(DolarContext);
+
 	
 	const [valor, setValor] = useState("")
 	const [data, setData] = useState()
@@ -75,10 +83,14 @@ const App = () => {
 
   return (
 	<>
-		 <div className="App">
+		 <div className={theme}>
+	
+			<button type="button" onClick={toggleTheme}>Change Theme</button>
+			
 			<div className="container text-center">
 				<p className="price">Precio de Venta : {valorVenta}</p>
 				<p className="price">Precio de Compra : {valorCompra}</p>
+		
 			</div>
 				
 			  <div className="container text-center">
@@ -95,7 +107,7 @@ const App = () => {
 					data ?  <p className="price text-center">su conversion es ${data}</p> : <p>{""}</p>
 					
 				}
-			
+			<Footer />
 			
 		</div>
 	</>
