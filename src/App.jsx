@@ -98,17 +98,17 @@ const App = () => {
 			  <div className="text-center contenedorApp">
 				  <h3>Welcome to Currency App</h3>
 				  <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="Insert amount of money in USD" onChange={handleChange} value={valor} />
-				  
+				   {
+					
+					data ?  <p className="price text-center">Su conversión es ${data}</p> : <p>{""}</p>
+					
+				}
 				  <div className="botonera">
 					  <button type="submit" className="btn btn-primary" onClick={()=>fetchingData()}>Calculate pesos</button>  
 					  <button type="reset" className="btn btn-danger" onClick={()=> handleReset()}> Reset </button>
 				  </div>
 			  </div>
-			  {
-					
-					data ?  <p className="price text-center">su conversion es ${data}</p> : <p>{""}</p>
-					
-				}
+			 
 			<Footer />
 			
 		</div>
