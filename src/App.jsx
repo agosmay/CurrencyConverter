@@ -83,18 +83,20 @@ const App = () => {
 
   return (
 	<>
+		
 		 <div className={theme}>
-	
-			<button type="button" onClick={toggleTheme}>Change Theme</button>
 			
-			<div className="container text-center">
+	
+			<button type="button" className="btn btn-warning" onClick={toggleTheme}>Change Theme</button>
+			
+			<div className="text-center">
 				<p className="price">Precio de Venta : {valorVenta}</p>
 				<p className="price">Precio de Compra : {valorCompra}</p>
 		
 			</div>
 				
-			  <div className="container text-center">
-				  <h1>Welcome to Currency App</h1>
+			  <div className="text-center">
+				  <h3>Welcome to Currency App</h3>
 				  <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="Insert amount of money in USD" onChange={handleChange} value={valor} />
 				  
 				  <div className="botonera">
@@ -110,6 +112,7 @@ const App = () => {
 			<Footer />
 			
 		</div>
+	
 	</>
   )
 }

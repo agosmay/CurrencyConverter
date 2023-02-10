@@ -1,30 +1,26 @@
-
-
-.container {
-
-	padding: 20px;
-	
-}
-
-
 .botonera {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 20px;
+
 	
 }
 
 input {
-	width : 50%!important;
-	margin: 50px auto;
+	width : 80%!important;
+	margin: 30px auto;
 	border: 2px solid green!important;
+	
+	
+}
+.form-control {
+	font-size: 0.5rem;
 	
 }
 
 .price {
 	font-family: Lato, sans serif;
 	font-weight: 900;
-	font-size: 2.2rem;
+	font-size: 1.5rem;
 	
 }
 
@@ -32,12 +28,13 @@ input {
 	
 	background-color: black;
 	color: white;
-	margin: 50px;
+	
 }
 
 .light {
 	background-color: white;
 	color: black;
-	margin: 50px;
+
 	
 }
+

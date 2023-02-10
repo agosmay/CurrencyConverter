@@ -2,8 +2,9 @@
  {
 	
 	
-	font-size: 2.2rem;
-	height: 200px;
+	font-size: 1.5rem;
+	height: auto;
+
 	
 	
 	
@@ -13,6 +14,7 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
+	
 
 	
 }
@@ -26,17 +28,13 @@ ul li {
 }
 
 
-
-
-
-
 .footer-ul {
 	
 	font-family: 'Poor Story', cursive;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-around;
-	padding: 10px;
+	padding: 5px;
 	
 }
 
