@@ -89,13 +89,13 @@ const App = () => {
 	
 			<button type="button" className="btn btn-warning" onClick={toggleTheme}>Change Theme</button>
 			
-			<div className="text-center">
+			<div className="text-center contenedorPrecios">
 				<p className="price">Precio de Venta : {valorVenta}</p>
 				<p className="price">Precio de Compra : {valorCompra}</p>
 		
 			</div>
 				
-			  <div className="text-center">
+			  <div className="text-center contenedorApp">
 				  <h3>Welcome to Currency App</h3>
 				  <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="Insert amount of money in USD" onChange={handleChange} value={valor} />
 				  

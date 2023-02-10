@@ -1,7 +1,17 @@
 .botonera {
 	display: flex;
 	justify-content: space-evenly;
+	margin: 50px;	
+}
 
+.contenedorPrecios {
+	margin: 50px;
+	
+}
+
+
+.contenedorApp {
+	margin: 50px;
 	
 }
 
@@ -9,11 +19,12 @@ input {
 	width : 80%!important;
 	margin: 30px auto;
 	border: 2px solid green!important;
+	height: 60px;
 	
 	
 }
 .form-control {
-	font-size: 0.5rem;
+	font-size: 1rem;
 	
 }
 
